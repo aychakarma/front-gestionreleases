@@ -4,20 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Étape de construction de votre projet
-                // Exemple : sh 'mvn clean install'
+                echo 'Building..'
             }
         }
         stage('Test') {
             steps {
-                // Étape de test de votre projet
-                // Exemple : sh 'mvn test'
+                echo 'Testing..'
             }
         }
         stage('Deploy') {
             steps {
-                // Étape de déploiement de votre projet
-                // Exemple : sh 'mvn deploy'
+                echo 'Deploying....'
             }
         }
     }
